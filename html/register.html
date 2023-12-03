@@ -4,23 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnlineBanking</title>
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/login-register.css">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/login-register.css">
 </head>
 
 <body>
     <div class="login">
         <h1>Welcome to OnlineBanking</h1>
         <form class="login-form" action="">
+            <input class="name" type="text" id="nameInput" placeholder="Name">
             <input class="email" type="email" id="emailInput" placeholder="Email">
             <input class="password" type="password" id="passwordInput" placeholder="Password">
-            <a class="logInBtn" id="logInBtn">Log in</a>
-            <span class="eye eye-login eyeOff" id="eyeOnOff"></span>
-            <a href="./html/register.html">Don’t have an account? Register Now</a>
+            <a class="logInBtn" id="signInBtn">Sign in</a>
+            <span class="eye eye-register eyeOff" id="eyeOnOff"></span>
+            <a href="../index.html">Do you have an account? Log in Now</a>
         </form>
     </div>
-    <script src="./js/login.js"></script>
+    <script src="../js/register.js"></script>
 </body>
 
 </html>

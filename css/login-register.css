@@ -43,6 +43,11 @@ input{
     color: rgba(25, 25, 112, 0.7);
 }
 
+.name{
+    padding: 4px 14px;
+    width: 250px;
+}
+
 .email{
     padding: 4px 14px;
     width: 250px;
@@ -78,10 +83,20 @@ input{
     height: 24px;
     border: none;
     background-color: transparent;
-    position: absolute;
-    top: 76px;
-    right: 8px;
+    
     cursor: pointer;
+}
+
+.eye-login{
+    position: absolute;
+    top: 74.5px;
+    right: 8px;
+}
+
+.eye-register{
+    position: absolute;
+    top: 142.5px;
+    right: 8px;
 }
 
 .eyeOff{

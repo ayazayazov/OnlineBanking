@@ -1,16 +1,8 @@
+let nameInput = document.getElementById('nameInput');
 let emailInput = document.getElementById('emailInput');
 let passwordInput = document.getElementById('passwordInput');
-const logInBtn = document.getElementById('logInBtn');
 const eyeOnOff = document.getElementById('eyeOnOff');
-
-logInBtn.addEventListener('click', function(){
-    console.log('click');
-    if(emailInput.value === '' || passwordInput.value === ''){
-        alert('Please type the email or password.');
-    }else{
-        window.location.href = './html/dashboard.html';
-    }
-})
+const signInBtn = document.getElementById('signInBtn');
 
 eyeOnOff.addEventListener('click', ()=>{
     if(passwordInput.type === 'password'){
@@ -22,4 +14,13 @@ eyeOnOff.addEventListener('click', ()=>{
         eyeOnOff.classList.remove('eyeOn');
         eyeOnOff.classList.add('eyeOff');
     }
-})
+});
+
+signInBtn.addEventListener('click', ()=>{
+    
+    if(nameInput.value === '' || emailInput.value === '' || passwordInput.value === ''){
+        alert('Please fill in all the blanks.');
+    }else{
+        window.location.href = '../index.html';
+    }
+});
