@@ -16,11 +16,20 @@ eyeOnOff.addEventListener('click', ()=>{
     }
 });
 
+function register(){
+    let userIndex = localStorage.length;
+    // let user = localStorage.length;
+    // localStorage.user = {name: "John"};
+    localStorage[`user${userIndex}`] = JSON.stringify({name: nameInput.value, email: emailInput.value, password: passwordInput.value});
+    // localStorage.setItem([`name${userIndex}`, `email${userIndex}`, `password${userIndex}`], [nameInput.value, emailInput.value, passwordInput.value]);
+}
+
 signInBtn.addEventListener('click', ()=>{
     
     if(nameInput.value === '' || emailInput.value === '' || passwordInput.value === ''){
         alert('Please fill in all the blanks.');
     }else{
+        register();
         window.location.href = '../index.html';
     }
 });
