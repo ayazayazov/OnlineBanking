@@ -11,17 +11,19 @@ body{
     justify-content: center;
     align-items: center;
     font-family: var(--roboto);
+    position: relative;
 }
 
 .login{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     backdrop-filter: blur(14px);
-    padding: 50px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .login h1{
@@ -29,6 +31,10 @@ body{
     font-size: 60px;
     margin-bottom: 70px;
     color: rgba(25, 25, 112, 0.7);
+}
+
+.login h1 span{
+    color: #06ef63c4;
 }
 
 .login-form{
@@ -51,17 +57,17 @@ input{
 
 .name{
     padding: 4px 14px;
-    width: 250px;
+    width: 300px;
 }
 
 .email{
     padding: 4px 14px;
-    width: 250px;
+    width: 300px;
 }
 
 .password{
     padding: 4px 40px 4px 14px;
-    width: 224px;
+    width: 274px;
 }
 .logInBtn{
     font-size: 18px;
@@ -115,4 +121,63 @@ input{
 
 .login-register{
     color: rgba(25, 25, 112, 0.7);
+}
+
+.vector1{
+    width: 700px;
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    right: 400px;
+    transform: rotate(80deg);
+    mix-blend-mode: luminosity;
+}
+
+.atm{
+    width: 300px;
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    left: 400px;
+    filter: blur(1px);
+}
+
+.cost{
+    width: 500px;
+    position: absolute;
+    bottom: 200px;
+    right: 50px;
+    z-index: -1;
+    filter: blur(1px);
+}
+
+.credit{
+    width: 400px;
+    position: absolute;
+    top: -120px;
+    right: -250px;
+}
+
+.wallet{
+    width: 400px;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    bottom: 130px;
+    transform: rotate(-50deg);
+}
+
+.cash{
+    width: 400px;
+    position: absolute;
+    top: -150px;
+    left: -250px
+}
+
+.coins{
+    width: 300px;
+    position: absolute;
+    bottom: 200px;
+    left: -300px;
+    filter: blur(1px);
 }
