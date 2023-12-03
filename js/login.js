@@ -1,3 +1,4 @@
+delete localStorage.data;
 let emailInput = document.getElementById('emailInput');
 let passwordInput = document.getElementById('passwordInput');
 const logInBtn = document.getElementById('logInBtn');
