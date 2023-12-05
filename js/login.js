@@ -7,11 +7,23 @@ const eyeOnOff = document.getElementById('eyeOnOff');
 // let userLength = (+localStorage.userHistoryCount);
 // userLength++;
 let userLength = (localStorage.length-(+localStorage.userHistoryCount)-1);
-if(!localStorage.userHistoryCount)
-    userLength = 1;
 console.log(userLength);
-if(!userLength)
+if(localStorage.length===1){
+    userLength = 1;
+    console.log('userlenght:', userLength);
+}
+if(localStorage===0){
     userLength = 0;
+    console.log('userlenght:', userLength);
+}
+// if(!userLength){
+//     userLength = 0;
+//     console.log(userLength);
+// }
+// else if(!localStorage.userHistoryCount || localStorage.length){
+//     userLength = 1;
+//     console.log(userLength);
+// }
 const login = {
     email: function(){
         let usersEmail = [];
