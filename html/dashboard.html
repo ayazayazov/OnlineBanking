@@ -6,11 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dashboard</title>
     <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
 </head>
 
 <body>
-    <a id="logOut" href="../index.html">Log out</a>
-    <h1 id="username"></h1>
+    <div class="sidemenu">
+        <div class="usermenu">
+            <h1>GoFinance</h1>
+            <div class="profile">
+                <img src="" alt="">
+                <a id="userProfile" href="./profile.html"></a>
+            </div>
+            <a href="">Cards</a>
+            <a href="">Transfers and Payments</a>
+            <a id="showHistory">Show History</a>
+            <a id="logOut" href="../index.html">Log out</a>
+        </div>
+
+    </div>
+    <div class="main">
+        <p>Balance: $<span id="balance"></span></p>
+        <input type="number" id="inputAmount" placeholder="Enter your amount">
+        <button id="cashIn">Cash in</button>
+        <button id="withdraw">Withdraw</button>
+    </div>
+    <div class="rightmenu" id="rightMenu">
+        <div class="history" id="historyContent">
+
+        </div>
+        <div class="about" id="aboutContent">
+            <p>🚀 GoFinance: Elevate Your Online Banking! 🚀</p>
+            <br>
+            <p>✨ Seamless. Secure. Smart. ✨</p>
+            <br>
+            <p>🌐 Anywhere, Anytime Access:</p>
+            <p>Bank effortlessly with our user-friendly online platform and robust mobile app.</p>
+            <br>
+            <p>🔒 Top-Tier Security:</p>
+            <p>Your financial data is our priority – rest easy with our advanced encryption technology.</p>
+            <br>
+            <p>💸 Quick Transfers, Easy Payments:</p>
+            <p>Say goodbye to hassles. Make seamless transactions with just a few clicks.</p>
+            <br>
+            <p>📱 Financial Freedom in Your Pocket:</p>
+            <p>Manage your money on-the-go with our intuitive mobile app.</p>
+            <br>
+            <p>📈 Insights for Informed Decisions:</p>
+            <p>Empower yourself with valuable financial insights and analytics.</p>
+            <br>
+        </div>
+    </div>
     <script src="../js/dashboard.js"></script>
 </body>
 

@@ -18,7 +18,7 @@ body{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     backdrop-filter: blur(14px);
-    padding: 100px;
+    padding: 50px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,7 +124,8 @@ input{
 }
 
 .vector1{
-    width: 700px;
+    /* width: 700px; */
+    height: 80%;
     position: absolute;
     z-index: -1;
     top: 50px;
@@ -154,30 +155,33 @@ input{
 .credit{
     width: 400px;
     position: absolute;
-    top: -120px;
-    right: -250px;
+    z-index: -1;
+    top: 10px;
+    right: 80px;
 }
 
 .wallet{
     width: 400px;
     position: absolute;
     z-index: -1;
-    left: 0px;
-    bottom: 130px;
+    left: 80px;
+    bottom: 120px;
     transform: rotate(-50deg);
 }
 
 .cash{
     width: 400px;
     position: absolute;
-    top: -150px;
-    left: -250px
+    z-index: -1;
+    top: 10px;
+    left: 80px
 }
 
 .coins{
     width: 300px;
     position: absolute;
-    bottom: 200px;
-    left: -300px;
+    z-index: -1;
+    bottom: 250px;
+    left: 40px;
     filter: blur(1px);
 }

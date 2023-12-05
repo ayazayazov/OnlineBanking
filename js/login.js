@@ -1,53 +1,37 @@
 delete localStorage.data;
+delete localStorage.loginUserIndex;
 let emailInput = document.getElementById('emailInput');
 let passwordInput = document.getElementById('passwordInput');
 const logInBtn = document.getElementById('logInBtn');
 const eyeOnOff = document.getElementById('eyeOnOff');
-
+// let userLength = (+localStorage.userHistoryCount);
+// userLength++;
+let userLength = (localStorage.length-(+localStorage.userHistoryCount)-1);
+if(!localStorage.userHistoryCount)
+    userLength = 1;
+console.log(userLength);
+if(!userLength)
+    userLength = 0;
 const login = {
     email: function(){
         let usersEmail = [];
-        for(let i=0; i<localStorage.length; i++){
+        for(let i=0; i<userLength; i++){
             const getUser = JSON.parse(localStorage[`user${i}`]);
             usersEmail.push(getUser.email);
+            console.log(usersEmail);
         };
         return usersEmail;
     },
     password: function(){
         let usersPassword = [];
-        for(let i=0; i<localStorage.length; i++){
+        for(let i=0; i<userLength; i++){
             const getUser = JSON.parse(localStorage[`user${i}`]);
             usersPassword.push(getUser.password);
+            console.log(usersPassword);
         };
         return usersPassword;
     }
 };
-
-
-// function emailFun(){
-//     let users = [];
-//     for(let i=0; i<localStorage.length; i++){
-//         const getUser = JSON.parse(localStorage[`user${i}`]);
-//         users.push(getUser.email);
-//     };
-//     return users;
-// };
-// console.log(emailFun());
-
-// if(emailFun().includes("ayazayazov@gmail.com")){
-//     console.log('true');
-// }
-
-
-// emailFun();
-// console.log(emailFun());
-// let i=2;
-// let getUser = JSON.parse(localStorage[`user${i}`]);
-// console.log(getUser.name);
-// console.log(getUser.email);
-// console.log(getUser.password);
-// console.log(emailFun());
-// console.log(user.email);
 
 logInBtn.addEventListener('click', function(){
     if(emailInput.value === '' || passwordInput.value === ''){
@@ -60,7 +44,6 @@ logInBtn.addEventListener('click', function(){
     }
     else{
         alert('Email or password incorrect!');
-        // window.location.href = './html/dashboard.html';
     }
 });
 

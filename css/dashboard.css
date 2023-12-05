@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --roboto: 'Roboto', sans-serif;
+}
+
+body{
+    /* height: 100vh; */
+    min-height: 100vh;
+    /* overflow: hidden; */
+    background: linear-gradient(0deg, #00F260, #0575E6);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: var(--roboto);
+    position: relative;
+    display: flex;
+}
+
+.sidemenu{
+    /* background: linear-gradient(0deg, #00F260, #0575E6); */
+    width: 220px;
+    padding: 0px 10px;
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    /* align-content: space-between; */
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background: linear-gradient(180deg, rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    box-shadow: 0px 0px 100px rgb(255, 255, 255);
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+    margin: 20px;
+}
+
+.usermenu{
+    width: 200px;
+    /* height: 100%; */
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    margin-top: 20px;
+    /* justify-content: space-around; */
+}
+
+h1{
+    font-size: 40px;
+    color: #06ef63c4;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(25, 25, 112, 0.7);
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main{
+    padding: 50px;
+    background: linear-gradient(180deg, rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+    margin: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 100px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main p{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: rgba(25, 25, 112, 0.7);
+    /* margin-bottom: 20px; */
+}
+
+.main input{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    color: rgba(25, 25, 112, 0.7);
+}
+
+::placeholder{
+    color: rgba(25, 25, 112, 0.3);
+}
+
+.main button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    color: rgba(25, 25, 112, 0.7);
+    cursor: pointer;
+}
+.main button:nth-child(3){
+    background-color: lightgreen;
+}
+
+.main button:nth-child(3):hover{
+    background-color: rgb(94, 235, 94);
+}
+
+.main button:last-child{
+    background-color: lightcoral;
+}
+.main button:last-child:hover{
+    background-color: rgb(244, 99, 99);
+}
+.rightmenu{
+    padding: 50px;
+    background: linear-gradient(180deg, rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+    margin: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 100px rgb(255, 255, 255);
+
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about p{
+    font-size: 20px;
+    color: rgba(25, 25, 112, 0.7);
+
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+}
+
+.styled-table thead tr {
+    /* background-color: #009879; */
+    background-color: #06ef63c4;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
